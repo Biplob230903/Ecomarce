@@ -60,20 +60,24 @@ a{
     font-size: 1rem;
     padding: 0px 10px;
 }
+.fest{
+    width: 85%;
+    height: 40%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 40%;
+    left: 10%;
+}
 .section1{
-    position: absolute;
-    left: 15%;
-    top: 50%;
-    transform: translate(-15%,-50%);
+  height: 250px;
 }
 .section1 img{
-    height: 300px;
+    height: 250px;
 }
 .section1Button{
-  position: absolute;
-  left: 90%;
-  top: 50%;
-  transform: translate(-90%,-50%);  
+  position: relative;
+  top: 5%;
 }
 .section1Button h1,h2{
    font-family: Roboto;
@@ -314,38 +318,190 @@ footer p{
 
 /*Mobile View*/
 
-@media(max-width:430px){
-   .logo{
-    width: 170px;
-    height: 20px;
-    margin-left: -10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   }
-   .logo a{
-    font-size: 22px;
-   }
-   .logo img{
-     width: 25px;
-   }
-   .searchArea{
-    margin-right: 60px;
-    width: 120px;
-    height: 40px;
-    margin-top: -10px;
-   }
-   .section1{
-    width: 200px;
-   }
-   .section1 img{
-    width: 200px;
-   }
-   .section1Button{
-    width: 140px;
-    height: 160px;
-   }
-   .section1Button h1,h2{
-    font-size: 30px;
-   }
+@media(max-width:550px){
+    .logo img{
+        width: 15px;
+    }
+    .logo a{
+        font-size: 1rem;
+    }  
+    .searchArea{
+        width: 100px;
+        height: 25px;
+    }
+    .searchbox i{
+        font-size: 0px;
+    }
+    .searchbox input{
+
+        width: 90px;
+        height: 10px;
+        font-size: 10px;
+    }
+    .fest{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 30%;
+    }
+    .section1{
+        position: relative;
+        left: 10px;
+        height: 100px;
+        padding-bottom: 10px;
+      }
+      .section1 img{
+          height: 100px;
+      }
+      .section1Button{
+        position: relative;
+        top: 8%;
+        left: 10px;
+      }
+      .section1Button h1,h2{
+         line-height: 20px;
+         font-size: 1.2rem;
+         letter-spacing: 4px;
+      }
+      .section1Button h2{
+        letter-spacing: 0px;
+      }
+      .section1Button h1{
+        font-size: 1.5rem;
+        padding-bottom: 1px;
+      }
+      .btn{
+        position: absolute;
+        width: 60px;
+        height: 20px;
+        font-size: 15px;
+        border-radius: 20px;
+        left: 0px;
+        top: 25px;
+        font-size: 10px;
+    }
+    .iconArea i{
+     font-size: 10px;
+    }
+    .iconArea{
+        left: 5px;
+        padding: 0px;
+        width: 30px;
+        height: 40%;
+
+    }
+    .about{
+        display: flex;
+        width: 85%;
+        margin: 50px auto;
+        align-items: center;
+        justify-content: space-between;
+        padding: 30px;
+        margin-bottom: 150px;
+    }
+    .aboutbox{
+        width: 40%;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .aboutbox img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    .aboutbox h1{
+        font-size: .8rem;
+        margin:0px;
+        margin-left: 15px;
+    }
+    .aboutbox h4{
+        font-size: .6rem;
+        margin: 0px;
+        margin-left: 15px;
+    }
+    .aboutbox p{
+        font-size: .34rem;
+        letter-spacing: 0.5px;
+        margin-left: 15px;
+    }
+    .Notification{
+        width: 100%;
+        height: 50px;
+        margin-bottom: 12px;
+    }
+    .Notification h1{
+        font-size: 1rem;
+    }
+    .Not{
+        margin-top: 8px;
+        width: 70%;
+        height: 20%;
+    }
+    .Not input{
+        width: 70%;
+        height: 20px;
+        font-size: 10px;
+    }
+    .NotButton{
+        width: 50px;
+        height: 17px;
+        font-size: .6rem;
+        margin-left: 30px;
+    }
+    footer{
+        background-color: black;
+        padding: 4px;
+    }
+    footer p{
+        text-align: center;
+        font-size: 7px;
+       
+    }
+    .productsection{
+        width: 90%;
+        background-color: #FFFFFF;
+        box-shadow: 2px 2px 30px rgba(167,158,245,0.2);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 30px auto;
+        padding: 40px 20px;
+        margin-top: -60px;
+        position: relative;
+        background-size: 1000px;
+        border-radius: 10px;
+    }
+    .productsection h3{
+        font-size: 1rem;
+        letter-spacing: 1px;
+    }
+    .productbox{
+        width: 100px;
+        height: 150px;
+        margin: 5px 20px;
+    }
+    .productbox img{
+        height: 80px;
+        width: 90px;
+    }
+    .v{
+        font-size: 10px;
+    }
+    .productbox p{
+       font-size: 7px;
+    }
+    .BuyBtn{
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      left: 50%;
+      bottom: 10px;
+      transform: translateX(-50%);
+      width: 60px;
+      height: 20px;
+      display: none;
+      font-size: 8px;
+    }
 }
