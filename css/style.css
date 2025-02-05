@@ -314,7 +314,7 @@ footer p{
 
 /*Mobile View*/
 
-@media(max-width:430px){
+@media(max-width:1000px){
    .logo{
     width: 170px;
     height: 20px;
